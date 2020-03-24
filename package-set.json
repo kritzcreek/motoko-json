@@ -1,0 +1,30 @@
+[
+    {
+        "name": "leftpad",
+        "repo": "git@github.com:kritzcreek/mo-leftpad.git",
+        "version": "v1.0.0",
+        "dependencies": []
+    },
+    {
+        "name": "stdlib",
+        "repo": "file:///home/creek/code/mo-libs/stdlib",
+        "version": "master",
+        "dependencies": []
+    },
+    {
+        "name": "hex",
+        "repo": "https://github.com/kritzcreek/mo-hex",
+        "version": "mo-updates",
+        "dependencies": [
+            "stdlib"
+        ]
+    },
+    {
+        "name": "parsec",
+        "repo": "file:///home/creek/code/mo-libs/mo-parsec",
+        "version": "master",
+        "dependencies": [
+            "stdlib"
+        ]
+    }
+]
