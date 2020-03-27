@@ -1,0 +1,8 @@
+[
+  {
+    "name": "parsec",
+    "repo": "https://github.com/crusso/mo-parsec",
+    "version": "master",
+    "dependencies": []
+  }
+]

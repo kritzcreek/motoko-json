@@ -1,7 +1,6 @@
-import Iter "mo:stdlib/iter";
-import Nat "mo:stdlib/nat";
-import Option "mo:stdlib/option";
-import Debug "mo:stdlib/debug";
+import Iter "mo:stdlib/Iter";
+import Nat "mo:stdlib/Nat";
+import Option "mo:stdlib/Option";
 import Prim "mo:prim";
 
 module {
@@ -31,7 +30,6 @@ func natFromIter(iter: Iter.Iter<Char>, start: Nat, needsProgress: Bool): ?Nat {
           case (?d) switch (digitFromChar d) {
               case null break done;
               case (?n) {
-                  Debug.print(Prim.charToText d);
                   madeProgress := true;
                   res *= 10;
                   res += n
@@ -39,7 +37,6 @@ func natFromIter(iter: Iter.Iter<Char>, start: Nat, needsProgress: Bool): ?Nat {
           }
         }
     };
-    Debug.print(Nat.toText res);
     if (madeProgress) ?res else null
 };
 
@@ -52,7 +49,6 @@ public func intFromIter(iter: Iter.Iter<Char>): ?Int {
         case null return null;
         case (?'-') Option.map<Nat, Int>(func x = -x, natFromIter(iter, 0, true));
         case (?d) {
-            Debug.print(Prim.charToText d);
             switch (digitFromChar d) {
                 case null return null;
                 case (?d) natFromIter(iter, d, false);
