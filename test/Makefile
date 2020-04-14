@@ -1,7 +1,7 @@
 MOC?=./moc
-
+PKGS=$(shell vessel --package-set ../package-set.json sources)
 all:
-	$(MOC) $(shell vessel sources) -wasi-system-api test.mo
+	$(MOC) $(PKGS) -wasi-system-api test.mo
 	wasmtime test.wasm
 
 clean:
