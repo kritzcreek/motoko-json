@@ -1,8 +1,14 @@
 [
   {
-    "name": "parsec",
-    "repo": "https://github.com/crusso/mo-parsec",
-    "version": "ab6042ef1e549a92ce8c11374fe7fabe0f0dc92d",
+    "name": "base",
+    "repo": "git@github.com:dfinity-lab/motoko-base.git",
+    "version": "a44f1b41bf29ba7a7f179fb2c04406c1030fb583",
     "dependencies": []
+  },
+  {
+    "name": "parsec",
+    "repo": "https://github.com/kritzcreek/mo-parsec.git",
+    "version": "246a0a9b7ddace8e45459f23bba8c170bfed2e38",
+    "dependencies": ["base"]
   }
 ]

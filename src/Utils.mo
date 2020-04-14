@@ -1,6 +1,6 @@
-import Iter "mo:stdlib/Iter";
-import Nat "mo:stdlib/Nat";
-import Option "mo:stdlib/Option";
+import Iter "mo:base/Iter";
+import Nat "mo:base/Nat";
+import Option "mo:base/Option";
 import Prim "mo:prim";
 
 module {

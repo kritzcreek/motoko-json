@@ -1,5 +1,5 @@
 import Json "../src/Json";
-import Debug "mo:stdlib/Debug";
+import Debug "mo:base/Debug";
 
 // switch(Json.parse("{\"hello\":\"world\",\"right\":\"dude\"}")) {
 func testParse(t: Text) {

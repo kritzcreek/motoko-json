@@ -1,9 +1,9 @@
-import HM "mo:stdlib/HashMap";
-import Hash "mo:stdlib/Hash";
-import Int "mo:stdlib/Int";
-import Iter "mo:stdlib/Iter";
-import List "mo:stdlib/List";
-import Option "mo:stdlib/Option";
+import HM "mo:base/HashMap";
+import Hash "mo:base/Hash";
+import Int "mo:base/Int";
+import Iter "mo:base/Iter";
+import List "mo:base/List";
+import Option "mo:base/Option";
 import P "mo:parsec/Parsec";
 import Utils "Utils";
 
